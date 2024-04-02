@@ -9,9 +9,7 @@ require("dotenv").config();
 
 const app = express();
 app.use(
-  cors({
-    origin: "https://video-streaming-frontend-rho.vercel.app",
-  })
+  cors()
 );
 app.use(express.json());
 
